@@ -4,13 +4,9 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
+import com.tdd.Dollar;
+
 public class DollarTest {
-  /**
-   * Rigorous Test :-)
-   */
   @Test
   public void testMultiplication() {
     Dollar five = new Dollar(5);
