@@ -1,3 +1,5 @@
+package com.tdd;
+
 class Dollar {
   int amount = 10;
 
