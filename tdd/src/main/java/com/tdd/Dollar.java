@@ -1,16 +1,17 @@
 package com.tdd;
 
-class Dollar {
+import com.tdd.Money;
+
+class Dollar extends Money {
   private int amount;
-  private String currency;
 
   String currency() {
-    return currency;
+    return this.currency;
   }
 
-  Dollar(int amount) {
+  Dollar(int amount, String currency) {
     this.amount = amount;
-    this.currency = "USD";
+    this.currency = currency;
   }
 
   public boolean equals(Object object) {
@@ -19,6 +20,6 @@ class Dollar {
   }
 
   public Money times(int multiplier) {
-    return new Dollar(this.amount * multiplier);
+    return Money.dollar(this.amount * multiplier);
   }
 }

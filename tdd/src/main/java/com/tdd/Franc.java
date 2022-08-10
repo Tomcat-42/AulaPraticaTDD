@@ -4,15 +4,14 @@ import com.tdd.Money;
 
 public class Franc extends Money {
   private int amount;
-  private String currency;
+
+  public Franc(int amount, String currency) {
+    this.amount = amount;
+    this.currency = currency;
+  }
 
   String currency() {
     return currency;
-  }
-
-  public Franc(int amount) {
-    this.amount = amount;
-    this.currency = "CHF";
   }
 
   public boolean equals(Object object) {
@@ -21,6 +20,6 @@ public class Franc extends Money {
   }
 
   public Money times(int multiplier) {
-    return new Franc(this.amount * multiplier);
+    return Money.franc(amount * multiplier);
   }
 }
