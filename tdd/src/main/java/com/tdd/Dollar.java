@@ -4,13 +4,14 @@ import com.tdd.Money;
 
 class Dollar extends Money {
   private int amount;
+  
+  // constructor
+  Dollar(int amount, String currency) {
+    super(amount, currency);
+  }
 
   String currency() {
     return this.currency;
-  }
-
-  Dollar(int amount, String currency) {
-    super(amount, currency);
   }
 
   public boolean equals(Object object) {

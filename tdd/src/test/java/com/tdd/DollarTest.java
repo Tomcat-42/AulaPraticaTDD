@@ -11,19 +11,19 @@ import com.tdd.Dollar;
 public class DollarTest {
   @Test
   public void testMultiplication() {
-    Dollar five = new Dollar(5);
-    assertTrue(new Dollar(10).equals(five.times(2)));
-    assertTrue(new Dollar(15).equals(five.times(3)));
+    Dollar five = new Dollar(5, "USD");
+    assertTrue(new Dollar(10, "USD").equals(five.times(2)));
+    assertTrue(new Dollar(15, "USD").equals(five.times(3)));
   }
 
   @Test
   public void testEquality() {
-    assertTrue(new Dollar(5).equals(new Dollar(5)));
-    assertFalse(new Dollar(5).equals(new Dollar(6)));
+    assertTrue(new Dollar(5, "USD").equals(new Dollar(5, "USD")));
+    assertFalse(new Dollar(5, "USD").equals(new Dollar(6, "USD")));
   }
 
   @Test
   public void testCurrency() {
-    assertEquals("USD", new Dollar(1).currency());
+    assertEquals("USD", new Dollar(1, "USD").currency());
   }
 }

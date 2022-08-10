@@ -5,6 +5,7 @@ import com.tdd.Money;
 public class Franc extends Money {
   private int amount;
 
+  // constructor
   public Franc(int amount, String currency) {
     super(amount, currency);
   }
