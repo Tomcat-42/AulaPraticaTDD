@@ -2,13 +2,15 @@ package com.tdd;
 
 class Dollar {
   private int amount;
+  private String currency;
 
   String currency() {
-    return "USD";
+    return currency;
   }
 
   Dollar(int amount) {
     this.amount = amount;
+    this.currency = "USD";
   }
 
   public boolean equals(Object object) {
