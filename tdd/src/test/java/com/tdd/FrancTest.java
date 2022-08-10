@@ -21,4 +21,9 @@ public class FrancTest {
     assertTrue(new Franc(5).equals(new Franc(5)));
     assertFalse(new Franc(5).equals(new Franc(6)));
   }
+
+  @Test
+  public void testCurrency() {
+    assertEquals("CHF", new Franc(1).currency());
+  }
 }

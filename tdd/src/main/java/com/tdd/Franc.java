@@ -1,6 +1,7 @@
 package com.tdd;
+import com.tdd.Money;
 
-public class Franc {
+public class Franc extends Money {
   private int amount;
 
   public Franc(int amount) {

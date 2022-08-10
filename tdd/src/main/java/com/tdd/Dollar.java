@@ -3,6 +3,10 @@ package com.tdd;
 class Dollar {
   private int amount;
 
+  String currency() {
+    return "USD";
+  }
+
   Dollar(int amount) {
     this.amount = amount;
   }
