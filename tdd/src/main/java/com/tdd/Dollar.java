@@ -1,13 +1,18 @@
 package com.tdd;
 
 class Dollar {
-  int amount;
+  private int amount;
 
   Dollar(int amount) {
     this.amount = amount;
   }
 
-  void times(int multiplier) {
-    amount *= multiplier;
+  public boolean equals(Object object) {
+    Dollar dollar = (Dollar) object;
+    return amount == dollar.amount;
+  }
+
+  Dollar times(int multiplier) {
+    return new Dollar(this.amount * multiplier);
   }
 }
