@@ -12,7 +12,7 @@ class Dollar {
     return amount == dollar.amount;
   }
 
-  Dollar times(int multiplier) {
+  public Money times(int multiplier) {
     return new Dollar(this.amount * multiplier);
   }
 }

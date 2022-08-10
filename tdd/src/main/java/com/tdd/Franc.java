@@ -12,7 +12,7 @@ public class Franc {
     return amount == franc.amount;
   }
 
-  public Franc times(int multiplier) {
+  public Money times(int multiplier) {
     return new Franc(this.amount * multiplier);
   }
 }
