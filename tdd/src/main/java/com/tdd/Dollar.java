@@ -3,8 +3,8 @@ package com.tdd;
 import com.tdd.Money;
 
 class Dollar extends Money {
-  private int amount;
-  
+  protected int amount;
+
   // constructor
   Dollar(int amount, String currency) {
     super(amount, currency);

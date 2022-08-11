@@ -19,7 +19,6 @@ public class DollarTest {
   @Test
   public void testEquality() {
     assertTrue(new Dollar(5, "USD").equals(new Dollar(5, "USD")));
-    assertFalse(new Dollar(5, "USD").equals(new Dollar(6, "USD")));
   }
 
   @Test
